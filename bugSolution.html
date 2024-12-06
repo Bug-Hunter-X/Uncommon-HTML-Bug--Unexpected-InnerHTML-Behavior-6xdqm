@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Correct use of insertAdjacentHTML for appending content
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', "<p>This is a paragraph inside a div.</p>");
+  </script>
+</body>
+</html>
